@@ -9,7 +9,10 @@ import streamlit as st
 import pickle
 import pandas as pd
 import sklearn
-model=pickle.load(open('C:/Users/User/Documents/college_prediction/pipe2.pkl','rb' ))
+import os
+
+dirname = os.path.dirname(__file__)
+model= os.path.join(dirname, 'pickle.load(open('C:/Users/User/Documents/college_prediction/pipe2.pkl','rb' )))
 st.title('Admission Prediction')
 def user_input():
     school=st.selectbox('course type', ('Academic', 'Vocational'))
