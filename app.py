@@ -9,7 +9,7 @@ import streamlit as st
 import pickle
 import pandas as pd
 import sklearn
-model=pickle.load(open('model.pkl','rb' ))
+model=pickle.load(open('random forest.pkl','rb' ))
 st.title('Admission Prediction')
 def user_input():
     school=st.selectbox('course type', ('Academic', 'Vocational'))
